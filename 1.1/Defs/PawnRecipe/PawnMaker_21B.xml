@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="SW_AssemblyKit_Base">
+    <defName>Create_21B_Item</defName>
+    <label>2-1B Surgical Droid Assembly Kit</label>
+    <description>A assembly kit containing the tools and materials, to fully create a Medical Droid</description>
+    <graphicData>
+      <texPath>Things/Items/IndustrialAutomaton</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>4300</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="SW_CreateBuilding_Base">
+    <defName>Create_21B_Building</defName>
+    <label>2-1B Surgical Droid</label>
+    <description>Creates a 2-1B Surgical Droid.</description>
+    <comps>
+      <li Class="O21Toolbox.CompProperties_PawnSpawner">
+        <pawnKind>Pawn_21B_Medical</pawnKind>
+        <newborn>true</newborn>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef>
+    <defName>Create_21B_Droid</defName>
+    <label>create 2-1B Surgical Droid</label>
+    <description>Create a 2-1B Surgical Droid.</description>
+    <jobString>Creating Droid.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>90</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <Create_21B_Building>1</Create_21B_Building>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>21B_Series</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Assemble_21B_DroidB</defName>
+    <label>assemble 2-1B Surgical Droid</label>
+    <description>Assemble a 2-1B Surgical Droid.</description>
+    <jobString>Assembling Droid.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Create_21B_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Create_21B_Building>1</Create_21B_Building>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>

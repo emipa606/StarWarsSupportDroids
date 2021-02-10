@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.RaceSettings>
+    <defName>Viper_Probe_Settings</defName>
+    <pawnKindSettings>
+      <startingColonists>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>Pawn_Viper_Probe</li>
+              </kindDefs>
+              <chance>20.0</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>DroidPlayerColony</li>
+          </factionDefs>
+        </li>
+      </startingColonists>
+    </pawnKindSettings>
+  </AlienRace.RaceSettings>
+</Defs>

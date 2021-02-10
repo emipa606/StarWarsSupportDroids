@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>BactaTank</defName>
+    <label>bacta tank</label>
+    <description>DO NOT USE FOR SURGERIES!! A bacta tank was a cylindrical tank into which a being could be submerged for extensive exposure to bacta, a fluid that could accelerate healing and treat major injuries. Does need a bacta tank monitor.</description>
+    <graphicData>
+      <texPath>Things/Buildings/BactaTank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(6,6)</drawSize>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+    </graphicData>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2800</WorkToBuild>
+      <Mass>35</Mass>
+      <Flammability>1.0</Flammability>
+      <BedRestEffectiveness>0</BedRestEffectiveness>
+      <Comfort>0.40</Comfort>
+      <ImmunityGainSpeedFactor>0</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>0</SurgerySuccessChanceFactor>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>BactaTankMonitor</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <size>(1,2)</size>
+    <uiIconScale>1.3</uiIconScale>
+    <uiIconPath>Things/Buildings/BactaTankMenu</uiIconPath>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
+      <SW_Bacta>50</SW_Bacta>
+    </costList>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>10</bed_healPerDay>
+      <bed_defaultMedical>true</bed_defaultMedical>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>60</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <designationHotKey>Misc5</designationHotKey>
+    <researchPrerequisites>
+      <li>BactaTechnology</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <techLevel>Spacer</techLevel>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>BactaTankMonitor</defName>
+    <label>bacta tank monitor</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Buildings/BactaTankMonitor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.30, 0.40)</volume>
+      </shadowData>
+      <damageData>
+        <rectN>(0.078125,0.46875,0.859375,0.53125)</rectN>
+        <rectS>(0.078125,0.46875,0.859375,0.53125)</rectS>
+        <rectE>(0.125,0.46875,0.625,0.296875)</rectE>
+        <rectW>(0.25,0.46875,0.625,0.296875)</rectW>
+        <cornerTR>Damage/Corner</cornerTR>
+      </damageData>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <researchPrerequisites>
+      <li>BactaTechnology</li>
+    </researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.2</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>80</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <MedicalTendQualityOffset>0.1</MedicalTendQualityOffset>
+          <ImmunityGainSpeedFactor>2</ImmunityGainSpeedFactor>
+          <BedRestEffectiveness>1</BedRestEffectiveness>
+          <Comfort>0.75</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacent>false</mustBePlacedAdjacent>
+      </li>
+    </comps>
+    <designationHotKey>Misc5</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <uiIconScale>0.5</uiIconScale>
+  </ThingDef>
+</Defs>

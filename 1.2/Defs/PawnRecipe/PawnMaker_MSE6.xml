@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="SW_AssemblyKit_Base">
+    <defName>Create_MSE6_Item</defName>
+    <label>MSE-6 Repair Droid Assembly Kit</label>
+    <description>A assembly kit containing the tools and materials, to fully create a Repair Droid</description>
+    <graphicData>
+      <texPath>Things/Items/RebaxanColumni</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>350</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="SW_CreateBuilding_Base">
+    <defName>Create_MSE6_Building</defName>
+    <label>MSE-6 Repair Droid</label>
+    <description>Creates a MSE-6 Repair Droid.</description>
+    <comps>
+      <li Class="O21Toolbox.CompProperties_PawnSpawner">
+        <pawnKind>Pawn_MSE6_Repair</pawnKind>
+        <newborn>true</newborn>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef>
+    <defName>Create_MSE6_Droid</defName>
+    <label>create MSE-6 Repair Droid</label>
+    <description>Create a MSE-6 Repair Droid.</description>
+    <jobString>Creating Droid.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>45</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <Create_MSE6_Building>1</Create_MSE6_Building>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>MSE6_Series</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Assemble_MSE6_DroidB</defName>
+    <label>assemble MSE-6 Repair Droid</label>
+    <description>Assemble a MSE-6 Repair Droid.</description>
+    <jobString>Assembling Droid.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Create_MSE6_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Create_MSE6_Building>1</Create_MSE6_Building>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>

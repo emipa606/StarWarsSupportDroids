@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Star Wars - Support Droids (Continued)</name>
+  <packageId>Mlie.StarWarsSupportDroids</packageId>
+  <author>FantasyFan</author>
+  <url>https://github.com/emipa606/StarWarsSupportDroids</url>
+  <supportedVersions>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+      <downloadUrl>https://github.com/erdelf/AlienRaces/releases/latest</downloadUrl>
+    </li>
+    <li>
+      <packageId>neronix17.toolbox</packageId>
+      <displayName>[O21] Toolbox</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1660622094</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>jecrell.jecstools</packageId>
+      <displayName>JecsTools</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2195729899</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>Mlie.StarWarsDroidsCore</packageId>
+      <displayName>Star Wars - Droids Core</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2390795789</steamWorkshopUrl>
+      <downloadUrl>https://github.com/emipa606/StarWarsDroidsCore/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>erdelf.HumanoidAlienRaces</li>
+    <li>neronix17.toolbox</li>
+    <li>jecrell.jecstools</li>
+    <li>Mlie.StarWarsDroidsCore</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of FantasyFans mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=2210262524
+
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/StarWarsSupportDroids][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+Have you ever wanted to have other Droids from Star Wars in your base. Now you can.
+
+This mod adds Star Wars Support Droids:
+-2-1B-Series (medical)
+-FX-7-Series (medical)
+-GNK-Series
+-MSE-6-Series (repair)
+-Viper-Probe-Droid
+
+Adds bacta:
+-Bacta (raw resource)
+-Bacta Patch (medicine)
+-Bactade (medical food)
+
+
+Other Star Wars Mods:
+-Tatooine Races: https://steamcommunity.com/sharedfiles/filedetails/?id=1950621752
+-Tatooine Factions: https://steamcommunity.com/sharedfiles/filedetails/?id=1951919141
+
+-Astromech Droids: https://steamcommunity.com/sharedfiles/filedetails/?id=1961087173
+-Protocol Droids: https://steamcommunity.com/sharedfiles/filedetails/?id=1963551607
+
+
+If you find things unbalanced, please make suggestions for improvement.
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
+</ModMetaData>
+

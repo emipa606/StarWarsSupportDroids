@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.ThingDef_AlienRace ParentName="SW_Droid_Base">
+    <defName>MSE6_Repair</defName>
+    <label>MSE-6 Repair Droid</label>
+    <description>The MSE-6-series repair droid, sometimes referred to as the mouse droid, was a small, box-shaped, wheeled general purpose MSE-series droid often used for delivery and maintenance purposes.</description>
+    <alienRace>
+      <generalSettings>
+        <forcedRaceTraitEntries>
+          <li>
+            <defName>SupportAI</defName>
+            <chance>100</chance>
+          </li>
+        </forcedRaceTraitEntries>
+        <notXenophobistTowards>
+          <li>Human</li>
+          <!--<li>21B_Medical</li>-->
+          <li>FX7_MedicalAssistant</li>
+          <li>GNK_Power</li>
+          <li>MSE6_Repair</li>
+          <li>Viper_Probe</li>
+        </notXenophobistTowards>
+        <alienPartGenerator>
+          <aliencrowntypes>
+            <li>Male</li>
+          </aliencrowntypes>
+          <alienbodytypes>
+            <li>Male</li>
+          </alienbodytypes>
+          <useGenderedHeads>false</useGenderedHeads>
+          <useGenderedBodies>false</useGenderedBodies>
+          <customDrawSize>(0.4,0.4)</customDrawSize>
+          <customPortraitDrawSize>(0.5,0.5)</customPortraitDrawSize>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <!--Dark Grey-->
+                    <weight>20</weight>
+                    <only>(90,90,90)</only>
+                  </li>
+                  <li>
+                    <!--Grey-->
+                    <weight>30</weight>
+                    <only>(100,100,100)</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+          </colorChannels>
+        </alienPartGenerator>
+      </generalSettings>
+      <graphicPaths>
+        <li>
+          <body>Races/MSE6/</body>
+        </li>
+      </graphicPaths>
+      <raceRestriction>
+        <onlyUseRaceRestrictedWeapons>true</onlyUseRaceRestrictedWeapons>
+      </raceRestriction>
+    </alienRace>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <MedicalTendQuality>0</MedicalTendQuality>
+      <MedicalSurgerySuccessChance>0</MedicalSurgerySuccessChance>
+      <GeneralLaborSpeed>0.3</GeneralLaborSpeed>
+      <MeleeDodgeChance>.75</MeleeDodgeChance>
+      <ToxicSensitivity>0</ToxicSensitivity>
+      <MoveSpeed>3.70</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ImmunityGainSpeed>10</ImmunityGainSpeed>
+      <ArmorRating_Sharp>.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>.15</ArmorRating_Blunt>
+      <ArmorRating_Heat>2.00</ArmorRating_Heat>
+      <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+      <ComfyTemperatureMax>200</ComfyTemperatureMax>
+      <PainShockThreshold>0.99</PainShockThreshold>
+      <HungerRateMultiplier>0</HungerRateMultiplier>
+      <CarryingCapacity>25</CarryingCapacity>
+      <Mass>15</Mass>
+      <EatingSpeed>0</EatingSpeed>
+      <WorkSpeedGlobal>0</WorkSpeedGlobal>
+      <LeatherAmount>0</LeatherAmount>
+      <MeatAmount>0</MeatAmount>
+      <ResearchSpeed>0</ResearchSpeed>
+      <PlantWorkSpeed>0</PlantWorkSpeed>
+      <GlobalLearningFactor>0</GlobalLearningFactor>
+      <!--violence -->
+      <HuntingStealth>0</HuntingStealth>
+      <NegotiationAbility>0</NegotiationAbility>
+      <TradePriceImprovement>0</TradePriceImprovement>
+      <SocialImpact>0</SocialImpact>
+      <!--foragers -->
+      <CookSpeed>0</CookSpeed>
+      <ButcheryFleshSpeed>0</ButcheryFleshSpeed>
+      <ButcheryFleshEfficiency>0</ButcheryFleshEfficiency>
+      <!--primative -->
+      <DrugCookingSpeed>0</DrugCookingSpeed>
+      <!--animal-like -->
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <TrainAnimalChance>0</TrainAnimalChance>
+      <TameAnimalChance>0</TameAnimalChance>
+      <SmoothingSpeed>0</SmoothingSpeed>
+      <AnimalGatherSpeed>0</AnimalGatherSpeed>
+      <MiningSpeed>0</MiningSpeed>
+    </statBases>
+    <race>
+      <nameGenerator>NamerPersonMSEVI</nameGenerator>
+      <body>MSE6_Droid_Body</body>
+      <baseBodySize>0.5</baseBodySize>
+      <baseHealthScale>0.5</baseHealthScale>
+      <hediffGiverSets>
+        <li>SupportTraitsGiver</li>
+      </hediffGiverSets>
+      <specialShadowData>
+        <volume>(0.25, 0.5, 0.15)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </specialShadowData>
+    </race>
+    <recipes>
+      <li>SW_Install_Heat_Exaust</li>
+      <li>SW_Install_Power_Cell</li>
+      <li>SW_Install_Fluid_Reprocessor</li>
+      <li>SW_Install_Skill_Matrix</li>
+      <li>SW_Install_Photoreceptors</li>
+      <li>SW_Install_Auditory_Receptors</li>
+      <li>SW_Install_Arm</li>
+      <li>SW_Install_Leg</li>
+      <li>Deactivate_Social</li>
+      <li>Activate_Social</li>
+      <li>SW_Install_Arm_Computer_Scomp_Link</li>
+      <li>SW_Install_Arm_Repair_Arm</li>
+      <li>SW_Install_Arm_Charge_Arm</li>
+      <li>SW_Install_Arm_Electric_Arc_Welder</li>
+      <li>SW_Install_Arm_Circular_Saw</li>
+      <li>SW_Install_Arm_Hypodermic_Injector</li>
+      <li>SW_Install_Arm_Cutting_Saw</li>
+    </recipes>
+    <butcherProducts>
+      <Steel>45</Steel>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </butcherProducts>
+  </AlienRace.ThingDef_AlienRace>
+</Defs>

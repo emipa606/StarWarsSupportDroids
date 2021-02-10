@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>ViperProbeDroid</defName>
+    <label>viper probe droid</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_WandererJoin</workerClass>
+    <letterLabel>Viper Probe Droid</letterLabel>
+    <letterText>A imperial probe droid has entered your map and is joining the colony.</letterText>
+    <baseChance>0.4</baseChance>
+    <populationEffect>IncreaseMedium</populationEffect>
+    <pawnKind>Pawn_Viper_Probe_Pod</pawnKind>
+    <pawnFixedGender>Male</pawnFixedGender>
+    <pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+  </IncidentDef>
+</Defs>

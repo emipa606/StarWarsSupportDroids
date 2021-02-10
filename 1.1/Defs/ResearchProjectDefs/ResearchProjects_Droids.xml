@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>21B_Series</defName>
+    <label>2-1B-Series</label>
+    <description>Create 2-1B-Series Surgical Droids.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>WSDroidTab</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>FX7_Series</defName>
+    <label>FX-7-Series</label>
+    <description>Create FX-7-Series Medical Assistant Droids.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>WSDroidTab</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0.75</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>GNK_Series</defName>
+    <label>GNK-Series</label>
+    <description>Create GNK-Series Power Droids.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>WSDroidTab</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1.5</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>MSE6_Series</defName>
+    <label>MSE-6-Series</label>
+    <description>Create MSE-6-Series Repair Droids.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>WSDroidTab</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2.25</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Viper_Series</defName>
+    <label>Viper-Series</label>
+    <description>Create Viper Probe Droids.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>WSDroidTab</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>BactaTechnology</defName>
+    <label>bacta technology</label>
+    <description>Bacta was a thick, gelatinous substance with seemingly magical healing properties.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MultiAnalyzer</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>15.00</researchViewX>
+    <researchViewY>2.20</researchViewY>
+  </ResearchProjectDef>
+</Defs>

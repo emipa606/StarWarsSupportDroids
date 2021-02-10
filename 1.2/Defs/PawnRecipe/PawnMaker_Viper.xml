@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="SW_AssemblyKit_Base">
+    <defName>Create_Viper_Item</defName>
+    <label>Viper Probe Droid Assembly Kit</label>
+    <description>A assembly kit containing the tools and materials, to fully create a Probe Droid</description>
+    <graphicData>
+      <texPath>Things/Items/ArakydIndustries</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6000</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="SW_CreateBuilding_Base">
+    <defName>Create_Viper_Building</defName>
+    <label>Viper Probe Droid</label>
+    <description>Creates a Viper Probe Droid.</description>
+    <comps>
+      <li Class="O21Toolbox.CompProperties_PawnSpawner">
+        <pawnKind>Pawn_Viper_Probe</pawnKind>
+        <newborn>true</newborn>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef>
+    <defName>Create_Viper_Droid</defName>
+    <label>create Viper Probe Droid</label>
+    <description>Create a Viper Probe Droid.</description>
+    <jobString>Creating Droid.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <Create_Viper_Building>1</Create_Viper_Building>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>Viper_Series</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Assemble_Viper_DroidB</defName>
+    <label>assemble Viper Probe Droid</label>
+    <description>Assemble a Viper Probe Droid.</description>
+    <jobString>Assembling Droid.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Create_Viper_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Create_Viper_Building>1</Create_Viper_Building>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>

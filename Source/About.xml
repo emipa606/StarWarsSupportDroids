@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[1.1] Star Wars - Support Droids</name>
+  <author>FantasyFan</author>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <packageId>FantasyFan.StarWars.OtherDroid</packageId>
+  <description>
+This mod adds Star Wars Support Droids:
+-2-1B-Series (medical)
+-FX-7-Series (medical)
+-GNK-Series
+-MSE-6-Series (repair)
+-Viper-Probe-Droid
+
+Adds bacta:
+-Bacta (raw resource)
+-Bacta Patch (medicine)
+-Bactade (medical food)
+	  </description>
+</ModMetaData>

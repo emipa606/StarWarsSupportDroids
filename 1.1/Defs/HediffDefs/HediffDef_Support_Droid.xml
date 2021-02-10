@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef Name="Support_RacialBase" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(170, 210, 100)</defaultLabelColor>
+    <description>...</description>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+  <JecsTools.HediffExpandedDef ParentName="Support_RacialBase">
+    <defName>SupportAICorePrograming</defName>
+    <label>Support Droid AI Core Programing</label>
+    <labelNoun>a Enhanced AI Core Programing</labelNoun>
+    <postListText>Droids</postListText>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>Painstopper</spawnThingOnRemoved>
+  </JecsTools.HediffExpandedDef>
+  <HediffGiverSetDef>
+    <defName>SupportTraitsGiver</defName>
+    <hediffGivers>
+      <li Class="JecsTools.HediffGiver_StartWithHediff">
+        <hediff>SupportAICorePrograming</hediff>
+        <partsToAffect>
+          <li>Brain</li>
+        </partsToAffect>
+        <expandedDef>SupportAICorePrograming</expandedDef>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+  <HediffDef>
+    <defName>Deactivated_Social</defName>
+    <label>Deactivated Social</label>
+    <labelNoun>a Social Deactivated</labelNoun>
+    <description>The droid will not socialize with other colonists.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <priceImpact>false</priceImpact>
+    <defaultLabelColor>(170, 210, 100)</defaultLabelColor>
+    <stages>
+      <li>
+        <opinionOfOthersFactor>0</opinionOfOthersFactor>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef>
+    <defName>Deactivate_Social</defName>
+    <label>deactivate social</label>
+    <description>The droid will not socialize with other colonists.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Deactivating social.</jobString>
+    <effectWorking>ButcherMechanoid</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkillLearnFactor>4</workSkillLearnFactor>
+    <workSkill>Intellectual</workSkill>
+    <workAmount>1000</workAmount>
+    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+    <skillRequirements>
+      <Intellectual>4</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SW_Droid_Skill_Matrix</li>
+      <li>SW_Droid_Armored_Systems_Housig</li>
+      <li>SW_Droid_Analysis_Processors</li>
+      <li>SW_Droid_Analytical_Computer</li>
+      <li>SW_Droid_TranLangII_Communications_Module</li>
+      <li>SW_Droid_IntellexIV</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Deactivated_Social</addsHediff>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Activate_Social</defName>
+    <label>Activate Social</label>
+    <description>The droid will socialize with other colonists.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Deactivated_Social</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Activating social.</jobString>
+    <removesHediff>Deactivated_Social</removesHediff>
+    <effectWorking>ButcherMechanoid</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkillLearnFactor>4</workSkillLearnFactor>
+    <workSkill>Intellectual</workSkill>
+    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+    <workerClass>Recipe_RemoveImplant</workerClass>
+    <workAmount>1000</workAmount>
+    <isViolation>false</isViolation>
+    <skillRequirements>
+      <Intellectual>4</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+</Defs>

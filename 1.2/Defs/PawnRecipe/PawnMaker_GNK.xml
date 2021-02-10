@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="SW_AssemblyKit_Base">
+    <defName>Create_GNK_Item</defName>
+    <label>GNK Power Droid Assembly Kit</label>
+    <description>A assembly kit containing the tools and materials, to fully create a Power Droid</description>
+    <graphicData>
+      <texPath>Things/Items/IndustrialAutomaton</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>100</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="SW_CreateBuilding_Base">
+    <defName>Create_GNK_Building</defName>
+    <label>GNK Power Droid</label>
+    <description>Creates a GNK Power Droid.</description>
+    <comps>
+      <li Class="O21Toolbox.CompProperties_PawnSpawner">
+        <pawnKind>Pawn_GNK_Power</pawnKind>
+        <newborn>true</newborn>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef>
+    <defName>Create_GNK_Droid</defName>
+    <label>create GNK Power Droid</label>
+    <description>Create a GNK Power Droid.</description>
+    <jobString>Creating Droid.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Create_GNK_Building>1</Create_GNK_Building>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>GNK_Series</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Assemble_GNK_DroidB</defName>
+    <label>assemble GNK Power Droid</label>
+    <description>Assemble a GNK Power Droid.</description>
+    <jobString>Assembling Droid.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Create_GNK_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Create_GNK_Building>1</Create_GNK_Building>
+    </products>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>

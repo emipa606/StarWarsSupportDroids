@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Medical-->
+  <AlienRace.BackstoryDef>
+    <defName>MedicalStandardBackground1</defName>
+    <title>Manufactured</title>
+    <titleShort>Factory Made</titleShort>
+    <baseDescription>This Medical Driod was made in a Factory on Nubia in the Core Worlds with other Droids.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <spawnCategories>
+      <li>MedicalDroidBackstory</li>
+    </spawnCategories>
+    <workDisables>
+      <li>Animals</li>
+      <li>Cooking</li>
+      <li>ManualSkilled</li>
+      <li>Artistic</li>
+      <li>Hauling</li>
+      <li>Intellectual</li>
+      <li>Violent</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <linkedBackstory>MedicalStandardBackground2</linkedBackstory>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef>
+    <defName>MedicalStandardBackground2</defName>
+    <title>Medical Droid</title>
+    <titleShort>Medical Droid</titleShort>
+    <baseDescription>[PAWN_nameDef] was created by Industrial Automaton.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <spawnCategories>
+      <li>MedicalDroidBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef>
+    <defName>MedicalAssistantBackground1</defName>
+    <title>Manufactured</title>
+    <titleShort>Factory Made</titleShort>
+    <baseDescription>This Medical Assistant Driod was made in a Factory in the Core Worlds with other Droids.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <spawnCategories>
+      <li>MedicalAssistantDroidBackstory</li>
+    </spawnCategories>
+    <workDisables>
+      <li>Animals</li>
+      <li>Social</li>
+      <li>Cooking</li>
+      <li>ManualSkilled</li>
+      <li>Artistic</li>
+      <li>Intellectual</li>
+      <li>Violent</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <linkedBackstory>MedicalAssistantBackground2</linkedBackstory>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef>
+    <defName>MedicalAssistantBackground2</defName>
+    <title>Medical Assistant Droid</title>
+    <titleShort>Medical Droid</titleShort>
+    <baseDescription>[PAWN_nameDef] was created by Medtech Industries.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <spawnCategories>
+      <li>MedicalAssistantDroidBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  <!--Support-->
+  <AlienRace.BackstoryDef>
+    <defName>PowerStandardBackground1</defName>
+    <title>Manufactured</title>
+    <titleShort>Factory Made</titleShort>
+    <baseDescription>This Power Driod was made in a Factory on Nubia in the Core Worlds with other Droids.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <spawnCategories>
+      <li>PowerDroidBackstory</li>
+    </spawnCategories>
+    <workDisables>
+      <li>AllWork</li>
+      <li>Violent</li>
+    </workDisables>
+    <linkedBackstory>PowerStandardBackground2</linkedBackstory>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef>
+    <defName>PowerlStandardBackground2</defName>
+    <title>Power Droid</title>
+    <titleShort>Power Droid</titleShort>
+    <baseDescription>[PAWN_nameDef] was created by Industrial Automaton.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <spawnCategories>
+      <li>PowerDroidBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef>
+    <defName>SupportStandardBackground1</defName>
+    <title>Manufactured</title>
+    <titleShort>Factory Made</titleShort>
+    <baseDescription>This Repair Driod was made in a Factory on Chad in the Core Worlds with other Droids.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <spawnCategories>
+      <li>RepairDroidBackstory</li>
+    </spawnCategories>
+    <workDisables>
+      <li>Caring</li>
+      <li>Social</li>
+      <li>Animals</li>
+      <li>Cooking</li>
+      <li>Violent</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+      <li>Crafting</li>
+      <li>Artistic</li>
+      <li>Intellectual</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <linkedBackstory>RepairStandardBackground2</linkedBackstory>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef>
+    <defName>RepairlStandardBackground2</defName>
+    <title>Repair Droid</title>
+    <titleShort>Repair Droid</titleShort>
+    <baseDescription>[PAWN_nameDef] was created by Rebaxan Columni.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <spawnCategories>
+      <li>RepairDroidBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  <!--Probe-->
+  <AlienRace.BackstoryDef>
+    <defName>ProbeStandardBackground1</defName>
+    <title>Manufactured</title>
+    <titleShort>Factory Made</titleShort>
+    <baseDescription>This Probe Driod was made in a Factory on Mechis III in the Core Worlds with other Droids.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <spawnCategories>
+      <li>ProbeDroidBackstory</li>
+    </spawnCategories>
+    <workDisables>
+      <li>Caring</li>
+      <li>Animals</li>
+      <li>Cooking</li>
+      <li>ManualSkilled</li>
+      <li>Artistic</li>
+      <li>Hauling</li>
+      <li>Cleaning</li>
+      <li>Intellectual</li>
+      <li>Social</li>
+      <li>Firefighting</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <linkedBackstory>ProbeStandardBackground2</linkedBackstory>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef>
+    <defName>ProbeStandardBackground2</defName>
+    <title>Probe Droid</title>
+    <titleShort>Probe Droid</titleShort>
+    <baseDescription>[PAWN_nameDef] was created by Arakyd Industries.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <spawnCategories>
+      <li>ProbeDroidBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+</Defs>

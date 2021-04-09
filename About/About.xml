@@ -37,10 +37,13 @@
     <li>neronix17.toolbox</li>
     <li>jecrell.jecstools</li>
     <li>Mlie.StarWarsDroidsCore</li>
+    <li>syrchalis.traitvalue</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/WAEzk68.png[/img]
 Update of FantasyFans mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2210262524
+
+- Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value[/url]
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
@@ -68,11 +71,11 @@ Adds bacta:
 
 
 Other Star Wars Mods:
--Tatooine Races: https://steamcommunity.com/sharedfiles/filedetails/?id=1950621752
--Tatooine Factions: https://steamcommunity.com/sharedfiles/filedetails/?id=1951919141
+-Tatooine Races: https://steamcommunity.com/sharedfiles/filedetails/?id=2390805026
+-Tatooine Factions: https://steamcommunity.com/sharedfiles/filedetails/?id=2390807101
 
--Astromech Droids: https://steamcommunity.com/sharedfiles/filedetails/?id=1961087173
--Protocol Droids: https://steamcommunity.com/sharedfiles/filedetails/?id=1963551607
+-Protocol Droids: https://steamcommunity.com/sharedfiles/filedetails/?id=2390800621
+-Astromech Droids: https://steamcommunity.com/sharedfiles/filedetails/?id=2390798179
 
 
 If you find things unbalanced, please make suggestions for improvement.
@@ -88,4 +91,3 @@ If you find things unbalanced, please make suggestions for improvement.
 [/list]
 </description>
 </ModMetaData>
-

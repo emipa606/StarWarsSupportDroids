@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName = "Orbital_IndustrialAutomaton"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Create_21B_Item</thingDef>
+        <countRange>-2~5</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Create_FX7_Item</thingDef>
+        <countRange>-2~5</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Create_GNK_Item</thingDef>
+        <countRange>-2~5</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Create_MSE6_Item</thingDef>
+        <countRange>-2~5</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Create_Viper_Item</thingDef>
+        <countRange>-2~5</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>DroidParts</tradeTag>
+        <thingDefCountRange>20</thingDefCountRange>
+        <countRange>-2~2</countRange>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[1.1] Outer Rim - Faction - Tatooine</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/TraderKindDef[defName = "Caravan_JawaSandcrawler"]/stockGenerators</xpath>
+      <value>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>Create_21B_Item</thingDef>
+          <countRange>-2~2</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>Create_FX7_Item</thingDef>
+          <countRange>-2~2</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>Create_GNK_Item</thingDef>
+          <countRange>-2~2</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>Create_MSE6_Item</thingDef>
+          <countRange>-2~2</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>Create_Viper_Item</thingDef>
+          <countRange>-2~2</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>AstromechBattery</thingDef>
+          <countRange>20~30</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>AstromechRepairKit</thingDef>
+          <countRange>10~20</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>AstromechParts</thingDef>
+          <countRange>10~20</countRange>
+        </li>
+        <li Class="StockGenerator_Tag">
+          <tradeTag>DroidParts</tradeTag>
+          <thingDefCountRange>20</thingDefCountRange>
+          <countRange>-2~5</countRange>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[1.1] Outer Rim - Faction - Tatooine</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/TraderKindDef[defName = "Base_Jawa"]/stockGenerators</xpath>
+      <value>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>Create_21B_Item</thingDef>
+          <countRange>-2~2</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>Create_FX7_Item</thingDef>
+          <countRange>-2~2</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>Create_GNK_Item</thingDef>
+          <countRange>-2~2</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>Create_MSE6_Item</thingDef>
+          <countRange>-2~2</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>Create_Viper_Item</thingDef>
+          <countRange>-2~2</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>AstromechBattery</thingDef>
+          <countRange>25~50</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>AstromechRepairKit</thingDef>
+          <countRange>20~30</countRange>
+        </li>
+        <li Class="StockGenerator_SingleDef">
+          <thingDef>AstromechParts</thingDef>
+          <countRange>20~30</countRange>
+        </li>
+        <li Class="StockGenerator_Tag">
+          <tradeTag>DroidParts</tradeTag>
+          <thingDefCountRange>20</thingDefCountRange>
+          <countRange>-2~5</countRange>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>SW_Bacta</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName = "Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>SW_Bacta</thingDef>
+        <countRange>70~120</countRange>
+      </li>
+    </value>
+  </Operation>
+</Patch>

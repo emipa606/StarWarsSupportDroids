@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerPerson21B</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[2-1B]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>2-1B</keyword>
+          <path>Support_Droid/Nameparts1</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerPersonFXVII</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[FX-7]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>FX-7</keyword>
+          <path>Support_Droid/Nameparts2</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerPersonGNK</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[GNK]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>GNK</keyword>
+          <path>Support_Droid/Nameparts3</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerPersonMSEVI</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[MSE-6]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>MSE-6</keyword>
+          <path>Support_Droid/Nameparts4</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerPersonProbe</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[Probe]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Probe</keyword>
+          <path>Support_Droid/Nameparts5</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>
